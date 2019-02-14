@@ -11,8 +11,8 @@
     <li>
       <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.photo.to_s %>)">
         <%= cocktail.name %>
-        <%= link_to 'More details', cocktail_path(cocktail) %> |
-        <%= link_to 'Delete', cocktail, method: :delete, data: {confirm: 'Are you sure?'} %>
+        <p class="card-text"><%= link_to 'More details', cocktail_path(cocktail) %></p>
+        <p class="card-text"><%= link_to 'Delete', cocktail, method: :delete, data: {confirm: 'Are you sure?'} %></p>
       </div>
     </li>
   <% end %>
