@@ -1,0 +1,17 @@
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #617779;
+  transition: background 0.3s ease;
+  opacity: 0.9;
+  a {
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+  }
+}
+.btn-flat:hover {
+  background: #617779;
+  opacity: 1;
+}
+

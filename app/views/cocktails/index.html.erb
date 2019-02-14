@@ -1,12 +1,19 @@
-<h1>All cocktails</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://res.cloudinary.com/dmcfkhk2i/image/upload/v1550157900/bar2.jpg);">
+  <div class="container">
+    <h1>Drinkalicious</h1>
+    <p>Drink with class, browse in style</p>
+    <p class="btn btn-flat"><%= link_to 'add a cocktail', new_cocktail_path %></p>
+  </div>
+</div>
 
-<p><%= link_to 'add a cocktail', new_cocktail_path %></p>
-
-<% @cocktails.each do |cocktail| %>
-  <li>
-    <%= cocktail.name %> |
-    <%= link_to 'More details', cocktail_path(cocktail) %> |
-    <%= link_to 'Delete', cocktail, method: :delete, data: {confirm: 'Are you sure?'} %>
-  </li>
-<% end %>
-
+<div class="cards">
+  <% @cocktails.each do |cocktail| %>
+    <li>
+      <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cocktail.photo.to_s %>)">
+        <%= cocktail.name %>
+        <%= link_to 'More details', cocktail_path(cocktail) %> |
+        <%= link_to 'Delete', cocktail, method: :delete, data: {confirm: 'Are you sure?'} %>
+      </div>
+    </li>
+  <% end %>
+</div>
