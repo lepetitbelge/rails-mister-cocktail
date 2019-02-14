@@ -9,6 +9,4 @@ ingredients = user['drinks']
 ingredients.each do |ingredient|
   Ingredient.create(name: ingredient['strIngredient1'])
 end
-# user[drinks].each do |drinks|
-#   puts "drinks"
-# end
+
