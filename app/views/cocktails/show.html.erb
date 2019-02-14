@@ -1,4 +1,11 @@
 <h2><%= @cocktail.name %></h2>
+<p><%= link_to 'edit cocktail', edit_cocktail_path(@cocktail) %></p>
+
+<% if @cocktail.photo.file.nil? %>
+  <%= cl_image_tag("o74or5oeyfz0l7cp7gdp", width: 400, height: 300, crop: :pad) %>
+<% else %>
+  <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :pad %>
+<% end %>
 
   <% @doses.each do |dose| %>
     <li>

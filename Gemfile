@@ -30,9 +30,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-# # create a env file for secret storage
+# create a env file for secret storage
 # gem 'dotenv-rails', groups: [:development, :test]
 gem 'figaro'
+
+# gem carrierwave to upload files associated to Models
+gem 'carrierwave', '~> 1.2'
 
 # cloudinary gem
 gem 'cloudinary', '~> 1.9.1'
