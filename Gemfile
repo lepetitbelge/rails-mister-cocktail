@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use sqlite3 because it owns the world as the database for AR
-gem 'sqlite3', '~>1.3.6'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -36,6 +36,10 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+gem 'autoprefixer-rails'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'font-awesome-sass', '~> 5.0.9'
+gem 'simple_form'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
